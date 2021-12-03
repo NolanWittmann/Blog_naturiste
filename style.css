@@ -1,11 +1,35 @@
-/* ---------Image de fond d'accueil---------- */
-.bgPicture {
-    background-image: url(image/bgPicture.jpg);
-    height: 700px;
-    background-repeat: no-repeat;
+/* ---------Font-family---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+body {
+    font-family: 'Fuzzy Bubbles', cursive;
 }
 
-/* ---------Image de fond d'accueil---------- */
+/* ---------Font-family---------------- */
+
+/* ---------Image de fond d'accueil et titre---------- */
+.bgPicture {
+    margin-top: 0;
+    background-image: url(image/titre.jpg);
+    height: 626px;
+    margin-top: 24px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: 1px 2px 2px black;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5em;
+    text-align: center;
+}
+
+/* ---------Image de fond d'accueil et titre---------- */
 
 /* ---------La nav barre------------*/
 .flex, ul {
@@ -16,27 +40,39 @@ ul {
     width: 50%;
     list-style: none;
     justify-content: flex-end;
+    align-items: center;
 }
 
 li {
     margin-right: 4%;
+    font-size: 1.2em;
+}
+
+.logo{
+    position: relative;
+    left: 30px;
+    top: 2px;
 }
 
 .navBarre {
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.774);
+    background-color: rgb(245, 245, 245);
     margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-a:hover{
+a:hover {
     color: tomato;
 }
 
-a:link{
+a:link {
     text-decoration: none;
     color: grey;
 }
-a:focus{
+
+a:focus {
     color: yellowgreen;
 }
 
