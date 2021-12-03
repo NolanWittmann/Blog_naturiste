@@ -1,23 +1,43 @@
-.bgPicture{
+/* ---------Image de fond d'accueil---------- */
+.bgPicture {
     background-image: url(image/bgPicture.jpg);
     height: 700px;
     background-repeat: no-repeat;
 }
-.flex, ul{
+
+/* ---------Image de fond d'accueil---------- */
+
+/* ---------La nav barre------------*/
+.flex, ul {
     display: flex;
-    background-color: dimgrey;
 }
-ul{
+
+ul {
     width: 50%;
     list-style: none;
+    justify-content: flex-end;
 }
 
-li{
-    margin-right: 2%;
+li {
+    margin-right: 4%;
 }
 
-.navBarre{
-    width: 100%;   
+.navBarre {
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.774);
+    margin-bottom: 0;
 }
 
+a:hover{
+    color: tomato;
+}
 
+a:link{
+    text-decoration: none;
+    color: grey;
+}
+a:focus{
+    color: yellowgreen;
+}
+
+/* ---------La nav barre------------*/
