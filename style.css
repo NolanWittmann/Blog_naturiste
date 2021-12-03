@@ -1,0 +1,23 @@
+.bgPicture{
+    background-image: url(image/bgPicture.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+}
+.flex, ul{
+    display: flex;
+    background-color: dimgrey;
+}
+ul{
+    width: 50%;
+    list-style: none;
+}
+
+li{
+    margin-right: 2%;
+}
+
+.navBarre{
+    width: 100%;   
+}
+
+
