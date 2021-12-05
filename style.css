@@ -1,5 +1,6 @@
 /* ---------Font-family---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
     font-family: 'Fuzzy Bubbles', cursive;
@@ -9,24 +10,24 @@ body {
 
 /* ---------Image de fond d'accueil et titre---------- */
 .bgPicture {
-    margin-top: 0;
-    background-image: url(image/titre.jpg);
-    height: 626px;
-    margin-top: 24px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-top: 66px;
+    background-image: url(image/titre.png);
+    height: 409px;
+    width: 100%;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    box-shadow: 1px 2px 2px black;
+    
+    justify-content: flex-end;
+    color: white;
+    font-weight: bold;
 }
 
 h1 {
     margin: 0;
     font-size: 5em;
     text-align: center;
+    font-family: 'Anton', sans-serif;
+    margin-right: 1%;
 }
 
 /* ---------Image de fond d'accueil et titre---------- */
