@@ -2,21 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-body {
+* {
     font-family: 'Fuzzy Bubbles', cursive;
 }
 
 /* ---------Font-family---------------- */
 
+/* ----------Bg-body------------------- */
+body {
+    background-image: url(image/bg.jpg);
+}
+
+/* ----------Bg-body------------------- */
+
 /* ---------Image de fond d'accueil et titre---------- */
 .bgPicture {
-    margin-top: 66px;
     background-image: url(image/titre.png);
     height: 409px;
     width: 100%;
     background-repeat: no-repeat;
     display: flex;
-    
+
     justify-content: flex-end;
     color: white;
     font-weight: bold;
@@ -49,7 +55,7 @@ li {
     font-size: 1.2em;
 }
 
-.logo{
+.logo {
     position: relative;
     left: 30px;
     top: 2px;
@@ -59,9 +65,7 @@ li {
     width: 100%;
     background-color: rgb(245, 245, 245);
     margin-bottom: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
+
 }
 
 a:hover {
@@ -78,3 +82,73 @@ a:focus {
 }
 
 /* ---------La nav barre------------*/
+
+/* ------------Le formulaire-------------- */
+
+form {
+    height: 100vh;
+    padding: 100px;
+}
+
+.topForm {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin-left: auto;
+    margin-right: 30%;
+    margin-bottom: 0;
+}
+
+.botForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+input {
+    border-radius: 150px;
+    background-color: rgba(193, 216, 112, 0.836);
+}
+
+textarea {
+    width: 40%;
+    border-radius: 15px;
+    background-color: rgba(193, 216, 112, 0.836);
+}
+
+label {
+    margin-top: 5%;
+}
+
+.mr15 {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+#btn {
+    margin-top: 5%;
+}
+
+.box {
+    background-color: crimson;
+    height: 80%;
+}
+
+#mail {
+    padding-top: 0px;
+    width: 442px;
+    height: 28px;
+}
+
+input:hover {
+    background-color: rgba(98, 224, 82, 0.795);
+}
+
+textarea:hover {
+    background-color: rgba(98, 224, 82, 0.795);
+}
+
+/* ------------Le formulaire-------------- */
