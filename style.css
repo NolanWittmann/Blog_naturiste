@@ -49,7 +49,7 @@ ul {
     width: 50%;
     list-style: none;
     justify-content: flex-end;
-   font-weight: bold;
+    font-weight: bold;
 
 }
 
@@ -68,7 +68,7 @@ li {
     width: 100%;
     background-color: rgb(245, 245, 245);
     margin-bottom: 0;
- }
+}
 
 a:hover {
     color: tomato;
@@ -87,53 +87,82 @@ a:focus {
 
 
 /* ----------barre de recherche (nav barre) */
-#searchbox{
-    
+#searchbox {
+
     padding: 26px;
+}
+#navCherche{
+    width: 40px;
+    background-image: url(image/search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 380px;
+}
+
+#navCherche:focus{
+width: 150px;
 }
 
 /* ----------barre de recherche (nav barre) */
 
 /*----------------- Les widgets /images Où partir---------------- */
-.agde{
+.agde, .chm {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.agdeP{
-    color: white;
+.agdeP, .chmP{
     font-size: 1.1em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgba(0, 0, 0, 0.123);
-    width: 93%;
-    margin-left: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: justify;
+
+}
+.shadow{
+    border: 1px solid black;
+    box-shadow: 2px 2px 1px black;
+    margin-bottom: 2%;
+    
 }
 
-.oltra{
+.oltra, .montalivet {
     height: 300px;
     margin-right: 2%;
     border: 2px solid rgba(0, 0, 0, 0.664);
     border-radius: 10%;
 }
-iframe{
+
+.aMr {
+    margin-right: 2%;
+}
+
+.montalivet {
+    width: 450px;
+}
+
+iframe {
     margin-right: 2%;
     border: 2px solid rgba(0, 0, 0, 0.664);
     border-radius: 10%;
 }
-h3{
+
+h3 {
     text-align: center;
     font-size: 1.5em;
     font-family: 'Anton', sans-serif;
-    color: white;
+    color: black;
 }
 
-.boxOuPartir{
+.boxOuPartir {
     border: 1px solid black;
     box-shadow: black 1px 2px 2px;
     background-image: url(image/wood.jpg);
-    
+    padding: 20PX 30px;
+
 }
+
 /*----------------- Les widgets /images Où partir---------------- */
 
 
@@ -164,13 +193,13 @@ h3{
 
 input {
     border-radius: 150px;
-    background-color: rgba(193, 216, 112, 0.836);
+    background-color: white;
 }
 
 textarea {
     width: 40%;
     border-radius: 15px;
-    background-color: rgba(193, 216, 112, 0.836);
+    background-color: white;
 }
 
 label {
@@ -198,11 +227,11 @@ label {
 }
 
 input:hover {
-    background-color: rgba(98, 224, 82, 0.795);
+    background-color: rgba(194, 202, 193, 0.842);
 }
 
 textarea:hover {
-    background-color: rgba(98, 224, 82, 0.795);
+    background-color: rgba(194, 202, 193, 0.842);
 }
 
 /* ------------Le formulaire-------------- */
