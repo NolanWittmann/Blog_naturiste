@@ -9,9 +9,7 @@
 /* ---------Font-family---------------- */
 
 /* ----------Bg-body------------------- */
-body {
-    background-image: url(image/bg.jpg);
-}
+
 
 /* ----------Bg-body------------------- */
 
@@ -64,7 +62,7 @@ li {
 
 .navBarre {
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: #ffffc7;
     top: 0;
     border: 3px solid black;
     position: sticky;
@@ -121,6 +119,8 @@ a:focus {
     margin-left: 10%;
     text-align: justify;
     padding: 20px 15px 0 15px;
+    margin-top: 0px;
+    margin-bottom: 2%;
 }
 
 .shadow {
@@ -156,6 +156,12 @@ h3 {
     font-size: 1.5em;
     font-family: 'Anton', sans-serif;
     color: black;
+    background-color: #135814; ;
+    height: 70px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boxOuPartir {
@@ -170,6 +176,9 @@ h3 {
 
 
 /* ------------Le formulaire-------------- */
+.commu{
+margin-top: 95px;
+}
 
 .form2 {
     height: 40vh;
@@ -177,7 +186,7 @@ h3 {
     border: 2px solid black;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 10%;
+    margin-top: 2%;
     margin-bottom: 10%;
     background-color: rgba(230, 208, 208, 0.836)
 }
@@ -260,14 +269,14 @@ textarea:hover {
     text-align: justify;
     border: 2px black solid;
     border-radius: 15px;
-    background-image: url(image/wood&sand.jpg);
+    
     background-size: contain cover;
     padding: 10px 25px 0 25px;
+  
 }
 
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
-  
 }
 
 .div3 {
@@ -275,7 +284,7 @@ textarea:hover {
     text-align: justify;
     border: 2px black solid;
     border-radius: 15px;
-    background-image: url(image/wood&sand.jpg);
+   
     background-size: contain cover;
     padding: 10px 25px 0 25px;
 }
@@ -289,7 +298,7 @@ textarea:hover {
     text-align: justify;
     border: 2px black solid;
     border-radius: 15px;
-    background-image: url(image/wood&sand.jpg);
+    
     background-size: contain cover;
     padding: 10px 25px 0 25px;
 }
@@ -303,14 +312,14 @@ textarea:hover {
     text-align: justify;
     border: 2px black solid;
     border-radius: 15px;
-    background-image: url(image/wood&sand.jpg);
+    
     background-size: contain cover;
     padding: 10px 25px 0 25px;
 }
 
 .div8 {
     grid-area: 4 / 1 / 5 / 2;
- 
+
 }
 
 .div9 {
@@ -318,7 +327,7 @@ textarea:hover {
     text-align: justify;
     border: 2px black solid;
     border-radius: 15px;
-    background-image: url(image/wood&sand.jpg);
+    
     background-size: contain cover;
     padding: 10px 25px 0 25px;
 }
@@ -326,7 +335,15 @@ textarea:hover {
 .div10 {
     grid-area: 5 / 2 / 6 / 3;
 }
+h2{
+    color: #135814;
+}
 
 
 /* ---------Grille CSS pour page cliché----------- */
+
+/* ----------page test------------- */
+
+
+
 
