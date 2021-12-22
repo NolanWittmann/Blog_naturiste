@@ -20,7 +20,6 @@
     width: 100%;
     background-repeat: no-repeat;
     display: flex;
-
     justify-content: flex-end;
     color: white;
     font-weight: bold;
@@ -85,25 +84,22 @@ a:focus {
 
 
 /* ----------barre de recherche (nav barre) */
-#searchbox {
-
-    padding: 26px;
-}
-
-#navCherche {
-    width: 40px;
-    background-image: url(image/search.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 380px;
-}
-
-#navCherche:focus {
-    width: 150px;
-    transition: 0.7s;
-}
 
 /* ----------barre de recherche (nav barre) */
+
+/* ----------articles page d'accueil---------------- */
+.first {
+    width: 50%;
+}
+
+.second {
+    display: flex;
+    align-items: flex-end;
+
+
+}
+
+/* ----------articles page d'accueil---------------- */
 
 /*----------------- Les widgets /images Où partir---------------- */
 .agde, .chm {
@@ -156,7 +152,8 @@ h3 {
     font-size: 1.5em;
     font-family: 'Anton', sans-serif;
     color: black;
-    background-color: #135814; ;
+    background-color: #135814;
+    ;
     height: 70px;
     margin: 0;
     display: flex;
@@ -176,8 +173,8 @@ h3 {
 
 
 /* ------------Le formulaire-------------- */
-.commu{
-margin-top: 95px;
+.commu {
+    margin-top: 95px;
 }
 
 .form2 {
@@ -269,10 +266,10 @@ textarea:hover {
     text-align: justify;
     border: 2px black solid;
     border-radius: 15px;
-    
+
     background-size: contain cover;
     padding: 10px 25px 0 25px;
-  
+
 }
 
 .div2 {
@@ -284,7 +281,7 @@ textarea:hover {
     text-align: justify;
     border: 2px black solid;
     border-radius: 15px;
-   
+
     background-size: contain cover;
     padding: 10px 25px 0 25px;
 }
@@ -298,7 +295,7 @@ textarea:hover {
     text-align: justify;
     border: 2px black solid;
     border-radius: 15px;
-    
+
     background-size: contain cover;
     padding: 10px 25px 0 25px;
 }
@@ -312,7 +309,7 @@ textarea:hover {
     text-align: justify;
     border: 2px black solid;
     border-radius: 15px;
-    
+
     background-size: contain cover;
     padding: 10px 25px 0 25px;
 }
@@ -327,7 +324,7 @@ textarea:hover {
     text-align: justify;
     border: 2px black solid;
     border-radius: 15px;
-    
+
     background-size: contain cover;
     padding: 10px 25px 0 25px;
 }
@@ -335,15 +332,146 @@ textarea:hover {
 .div10 {
     grid-area: 5 / 2 / 6 / 3;
 }
-h2{
+
+h2 {
     color: #135814;
 }
 
 
 /* ---------Grille CSS pour page cliché----------- */
 
-/* ----------page test------------- */
+/* -----------------------footers---------------------- */
+
+footer {
+    background-color: #135814;
+    height: 80px;
+    width: 100%;
+}
+
+/* -----------------------footers---------------------- */
+
+/* ------------------Responsives------------------ */
+
+@media screen and (max-width: 500px) {
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .div3 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .div4 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .div5 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .div6 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .div7 {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+
+    .div8 {
+        grid-area: 8 / 1 / 9 / 2;
+    }
+
+    .div9 {
+        grid-area: 9 / 1 / 10 / 2;
+    }
+
+    .div10 {
+        grid-area: 10 / 1 / 11 / 2;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-title {
+        line-height: 50px;
+        font-size: 22px;
+    }
+
+    ul, li {
+        display: block;
+    }
+
+    li {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 12px;
+        border-bottom: 1px solid #777;
+        background: rgb(17,17,17);
+    }
+
+    #menu-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        background: #fff;
+        color: #000;
+        line-height: 50px;
+        text-align: center;
+        font-size: 40px;
+        cursor: pointer;
+        transition: all .5s;
+    }
 
 
+    #menu-button::after {
+        content: '×';
+    }
 
+    #menu-button.close {
+        color: #fff;
+        background: #000;
+    }
 
+    #menu-button.close::after {
+        content: '≡';
+    }
+
+    #menu {
+        transition: transform .5s;
+        position: absolute;
+        width: 100%;
+        max-width: 480px;
+        transform: translateY(-400px);
+
+    }
+
+    #menu.show-menu {
+        transform: translateY(67px);
+    }
+
+    .main {
+        padding: 62px 12px 12px 12px;
+    }
+
+    .navBarre
+    {
+        overflow: hidden;
+    }
+}

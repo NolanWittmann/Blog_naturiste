@@ -1,10 +1,8 @@
-const bye = document.getElementsByClassName('shadow')
-const btn = document.getElementById('btn')
+var menuButton = document.querySelector('#menu-button');
+var menu = document.querySelector('#menu');
 
-btn.addEventListener('click', ()=>{
-    if(bye.style.display === "none"){
-        bye.style.display = "block"
-    } else{
-        bye.style.display ="none"
-    }
-})
+// show or hide
+menuButton.addEventListener('click',function(){
+  menu.classList.toggle('show-menu');
+  menuButton.classList.toggle('close');
+});
