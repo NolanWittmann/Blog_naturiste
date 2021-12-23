@@ -43,10 +43,10 @@ h1 {
 }
 
 ul {
-    width: 50%;
+    width: 45%;
     list-style: none;
     justify-content: flex-end;
-    font-weight: bold;
+    
 }
 
 li {
@@ -55,8 +55,7 @@ li {
 }
 
 .logo {
-    left: 30px;
-    top: 2px;
+    float: left;
 }
 
 .navBarre {
@@ -72,8 +71,12 @@ a:hover {
 }
 
 a:link {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
+    }
+a{
+    color: black;
+    font-weight: bold;
 }
 
 a:focus {
@@ -82,10 +85,6 @@ a:focus {
 
 /* ---------La nav barre------------*/
 
-
-/* ----------barre de recherche (nav barre) */
-
-/* ----------barre de recherche (nav barre) */
 
 /* ----------articles page d'accueil---------------- */
 .first {
@@ -214,6 +213,9 @@ textarea {
     width: 40%;
     border-radius: 15px;
     background-color: white;
+}
+#area{
+    width: 100%;
 }
 
 label {
@@ -352,7 +354,8 @@ footer {
 
 /* ------------------Responsives------------------ */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 680px) {
+    /* page cliché_____________________________________________ */
     .parent {
         display: grid;
         grid-template-columns: 1fr;
@@ -401,6 +404,10 @@ footer {
         grid-area: 10 / 1 / 11 / 2;
     }
 
+    /* page cliché______________________________________________ */
+
+    /* burger menu______________________________________________ */
+
     * {
         margin: 0;
         padding: 0;
@@ -413,6 +420,12 @@ footer {
 
     ul, li {
         display: block;
+        
+    }
+
+    a{
+        color: white;
+        font-weight: bold;
     }
 
     li {
@@ -470,8 +483,53 @@ footer {
         padding: 62px 12px 12px 12px;
     }
 
-    .navBarre
-    {
-        overflow: hidden;
+    #navBarre{
+        width: 158%;
     }
+    /* burger menu__________________________________________ */
+
+    /* page "partir"________________________________________ */
+    .agde, .chm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    /* page "partir"________________________________________ */
+
+    /* page form____________________________________________ */
+
+    .topForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: 30%;
+        margin-bottom: 0;
+    }
+    
+    .botForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #mail, #firstName, #lastName, #area{
+        width: 160%;
+    }
+
+    .mr15 {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+
+    /* page form____________________________________________ */
+
 }
