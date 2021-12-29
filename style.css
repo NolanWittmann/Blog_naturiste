@@ -31,13 +31,29 @@
 
 .presentation {
     display: flex;
-    width: 100%;
+    width: 95%;
     border-bottom: black 2px solid;
     margin-bottom: 2%;
     padding-bottom: 2%;
     padding-top: 1%;
     padding-left: 2%;
+    margin-left: 1.5%;
+}
 
+.titleHome{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: blanchedalmond;
+    text-shadow: blanchedalmond 1px 0.5px 1px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #135814;;
+    border-bottom: black 2px solid;
+}
+
+.titleH3{
+    margin-bottom: 5%;
 }
 
 /* ---------Image de fond d'accueil et titre---------- */
@@ -156,7 +172,6 @@ h3 {
     font-family: 'Anton', sans-serif;
     color: black;
     background-color: #135814;
-    ;
     height: 70px;
     margin: 0;
     display: flex;
@@ -172,130 +187,106 @@ h3 {
 
 }
 
-
-
-.slider{
+.slider {
     width: 450px;
     overflow: hidden;
     margin-right: 2%;
     border-radius: 20px;
 }
 
-.slide{
+.slide {
     float: left;
 }
-.slides{
+
+.slides {
     width: calc(450px * 3);
     animation: glisse 15s infinite;
 }
 
-@keyframes glisse{
-    0%{
-        transform: translateX(0) ;
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
     }
-    10%{
-        transform: translateX(0) ;
+
+    10% {
+        transform: translateX(0);
     }
-    33%{
-        transform: translateX(-450px) ;
+
+    33% {
+        transform: translateX(-450px);
     }
-    43%{
-        transform: translateX(-450px) ;
+
+    43% {
+        transform: translateX(-450px);
     }
-    66%{
-        transform: translateX(-900px) ;
+
+    66% {
+        transform: translateX(-900px);
     }
-    76%{
-        transform: translateX(-900px) ;
+
+    76% {
+        transform: translateX(-900px);
     }
-    100%{
-        transform: translateX(0) ;
+
+    100% {
+        transform: translateX(0);
     }
-      
-    }
+
+}
 
 
 /*----------------- Les widgets /images Où partir---------------- */
 
 
 /* ------------Le formulaire-------------- */
-.commu {
-    margin-top: 95px;
-}
-
-.form2 {
-    height: 40vh;
-    padding: 100px;
-    border: 2px solid black;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 2%;
-    margin-bottom: 10%;
-    background-color: rgba(230, 208, 208, 0.836)
-}
-
-.topForm {
+.twoBlock{
     display: flex;
     justify-content: center;
-    width: 45%;
-    margin-left: auto;
-    margin-right: 30%;
-    margin-bottom: 0;
-}
-
-.botForm {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-top: 1%;
+   
 }
 
-
-input {
-    border-radius: 150px;
-    background-color: white;
-}
-
-textarea {
-    width: 40%;
-    border-radius: 15px;
-    background-color: white;
-}
-
-#area {
-    width: 100%;
-}
-
-label {
-    margin-top: 5%;
-}
-
-.mr15 {
-    margin-right: 2%;
+.leftPart{
+    height: 480px;
+    width: 50%;
+    margin-top: 0.5%;
     margin-left: 2%;
+    background-image: url(image/form.jpg);
 }
 
-#btn {
+.rigthPart{
+    margin: auto auto;
+    padding: 11% 5% 11% 5%;
+    border: black 20px solid;
+    background-color: #FFF5B2 ;
+    border-image: url("image/wood.jpg") 15;
+    
+   }
+
+.titleForm{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 15%;
+}
+
+.firstForm{
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.box {
-    background-color: crimson;
-    height: 80%;
+.secondForm{
+    margin-bottom: 5%;
 }
 
-#mail {
-    padding-top: 0px;
-    width: 442px;
-    height: 28px;
+#choice{
+    margin-right: 27%;
 }
 
-input:hover {
-    background-color: rgba(194, 202, 193, 0.842);
-}
-
-textarea:hover {
-    background-color: rgba(194, 202, 193, 0.842);
+input{
+    border-radius: 15px;
+    background-color: rgb(216, 192, 192);
 }
 
 /* ------------Le formulaire-------------- */
@@ -586,36 +577,52 @@ footer {
     /* page "partir"________________________________________ */
 
     /* page form____________________________________________ */
-
-    .topForm {
+    .twoBlock{
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
-        width: 100%;
-        margin-left: auto;
-        margin-right: 30%;
-        margin-bottom: 0;
+        margin-top: 1%;
     }
-
-    .botForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
+    
+    .leftPart{
+        width: 500px;
+        height: 325px;
+        margin-top: 0.5%;
+        margin-left: 2%;
+        margin-bottom: 0%;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-
-    #mail, #firstName, #lastName, #area {
-        width: 160%;
-    }
-
-    .mr15 {
+    
+    .rigthPart{
+        padding: 11% 5% 11% 5%;
+        border: #FFF5B2 20px solid;
+        background-image: url("image/wood.jpg");   
+       }
+    
+    .titleForm{
+        font-size: 1.5rem;
         text-align: center;
+        font-weight: bolder;
+        padding-bottom: 15%;
+    }
+    
+    .firstForm{
         margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .secondForm{
+        margin-bottom: 5%;
+    }
+        
+    #choice{
+        margin-right: 27%;
     }
 
-
+    input{
+        border-radius: 15px;
+        background-color: rgb(216, 192, 192);
+    }
     /* page form____________________________________________ */
-
-}
