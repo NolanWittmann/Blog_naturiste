@@ -59,7 +59,7 @@
 /* ---------Image de fond d'accueil et titre---------- */
 
 /* ---------La nav barre------------*/
-.flex, ul {
+.flex, #menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -243,8 +243,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1%;
-   
+    margin-top: 1%;   
 }
 
 .leftPart{
@@ -414,11 +413,63 @@ h2 {
 
 /* -----------------------footers---------------------- */
 
-footer {
-    background-color: #135814;
-    height: 80px;
+/* footer gauche */
+.bigMom{
+    display: flex;
     width: 100%;
+    border-top: black 2px solid;
+    margin-top: 1%;
+    padding-top: 1%;
 }
+
+.footerLeft{
+    height: 100px;
+    width: 33%;
+}
+
+.liFoot{
+    margin-bottom: 2%;
+}
+
+.liFoot a{
+    margin-top: 5%;
+    font-size: calc(3 / 100px);
+}
+.ulFoot{
+padding-top: 27px;
+padding-left: 35%;
+display: flex;
+flex-direction: column;
+}
+/* footer gauche */
+
+/* footer central */
+.footerCenter{
+    width: 33%;
+    height: 100px;
+}
+
+.ulCentral{
+    display: flex;
+    margin-left: 35%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* footer central */
+
+/* footer droite */
+.footerRigth{
+    width: 33%;
+}
+
+.gif{
+    
+    margin-left: 37%;
+}
+/* footer droite */
+
 
 /* -----------------------footers---------------------- */
 
